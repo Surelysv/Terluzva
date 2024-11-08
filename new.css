@@ -1,0 +1,291 @@
+* {
+    font-family: 'Segoe UI', Calibri, Arial, sans-serif;  
+}
+
+body {
+    font-size: 18px;
+    background-color: #efefef;
+    text-align: justify;
+}
+
+hr {
+    box-shadow: #000000 0 0 5px;
+    margin: 1rem 0 1rem 0;
+}
+
+header .logo .name{
+    display: inline-block;
+    padding-top: 0;
+    margin-left: 2em;
+    margin-top: .3em;
+}
+
+.logo {
+    margin: auto;
+    margin: 0;
+    right: 0;
+    padding-right: 0;
+    float: left;
+}
+
+#log{
+    fill:none;
+    fill-opacity:1;
+    stroke-width:5.29167;
+    stroke-dasharray:none;
+    stroke-opacity:1;
+}
+
+svg {
+    top: 0;
+    position: absolute;
+    width: 3.5em;
+    padding: .25em;
+}
+
+header{
+    height: 4em;
+    width: 100%;
+    margin: 0;
+    left: 0;
+    position: fixed;
+    padding: 0;
+    top: 0;
+    color: #fff;
+    background-color: #5c9d6add;
+    z-index: 3;
+    overflow: hidden;
+}
+
+header h1{
+    padding-left: 4.25em;
+    padding-top: .5em;
+    font-size: 20px;
+}
+
+#uline {
+    box-shadow: none;
+    margin: 0;
+    width: 14em;
+    position: absolute;
+}
+
+header nav ol li a{
+    text-decoration: none;
+    color: white;
+}
+
+header nav li {
+    list-style-type: none;
+    list-style-position: inside;
+    padding-left: 0;
+    padding: 1em;
+    height: 100%;
+    float: right;
+}
+
+header nav ol{
+    padding-left: 0;
+    position: absolute;
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 100%;
+    right: 0;
+}
+
+header nav ol li:hover{
+    background-color: #3f3f3f;
+}
+
+h1{
+    height: 100%;
+    margin-top: 0;
+    display: inline-block;
+    padding: 1em;
+    padding-left: 2em;
+}
+
+/*Main content*/
+
+main {
+    width: 85%;
+    margin: auto;
+    padding-bottom: 2em;
+    overflow: hidden;
+}
+
+article {
+    overflow: hidden;
+    background-color: #ffffff;
+    padding: 4em;
+    
+}
+
+article section h1 {
+    font-size: 24px;
+    padding-left: 0;
+    
+}
+
+article section figure {
+    width: 60%;
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-size: 14px;
+}
+
+.linkme{
+    background-color: #ffffff;
+    color: #000;
+    float: left;
+    padding-left: 0;
+    margin: 0 1rem 1rem 0;
+}
+
+.linkme .fit {
+    float: left;
+    object-fit: cover;
+    width: 40%;
+    left: 0;
+}
+
+.fit img {
+    width: 350%;
+    transform:translateX(-25%);
+}
+.linkme p{
+    overflow: hidden;
+    padding-left: 1em;
+    display: -webkit-box;
+    line-clamp: 3;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.summary{
+    display: inline;
+    height: 200px;
+    position: absolute;
+    background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,1));
+    color: #c4c4c4;
+    padding: 1em;
+}
+
+section .heading_a {
+    position: relative;
+    background-color: #303030;
+    color: #d3c7c7;
+    padding: 1em;
+    margin-bottom: 0;
+    
+}
+
+section span {
+    position: relative;
+    overflow: hidden;
+    width: 82.5%;
+    width: 1000px;
+    max-width: 600px;
+    height: 600px;
+    max-height: 180px;
+    padding: 0;
+    float: left;
+    margin: 2em;
+    z-index: 2;
+}
+
+.linkme .heading_a:hover{
+    cursor: pointer;
+    z-index: 2;
+    background-color: #d3c7c7;
+    color: #303030; 
+}
+
+main img {
+    width: 100%;
+}
+
+/*Aside section-main*/
+aside {
+    float: right;
+    width: 25%;
+    background-color: #fff;
+    padding: 1em;
+    right: 0;
+    margin-bottom: auto;
+}
+aside img {
+    border-radius: 50%;
+    float: left;
+    margin-right: .75em;
+    padding: -50%;
+    width: 7em;
+    height: 7em;
+    object-fit: cover;
+}
+
+aside #who {
+    margin-bottom: 3em;
+}
+
+aside #buttonlist {
+    cursor: pointer;
+    background-color: #fff;
+    color: #d68b00;
+}
+
+aside hr{
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border: 2.25px solid #000;
+}
+
+aside .dropdrown {
+    width: 100%;
+    display: inline-block;
+    list-style-type: none;
+    padding: 5px;
+    margin-bottom: 0;
+}
+
+aside .derived{
+    width: 10%;
+    display: none;
+    list-style-type: none;
+    padding-left: 1em;
+}
+
+aside .derived li {
+    margin: .75em;
+    margin-left: 0;
+}
+
+aside .dropdrown:hover .derived{
+    display: block;
+}
+
+
+/*Footer section*/
+
+footer{
+    background-color: #3f3f3f;
+    border-width: 0;
+    height: 45px;
+    padding: 30px 30px;
+    margin-bottom: 0;
+}
+
+footer #information {
+    margin: 0;
+    margin-left: 6em;
+    float: left;
+}
+
+footer #contact {
+    float: right;
+}
+
+footer nav{
+    margin: auto;
+}
