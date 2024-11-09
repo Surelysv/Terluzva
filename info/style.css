@@ -8,11 +8,10 @@ body {
     text-align: justify;
 }
 
-hr {
-    box-shadow: #000000 0 0 5px;
-    margin: 1rem 0 1rem 0;
+#img1{
+    margin-bottom: 1.5em;
+    margin-top: 1.5em;
 }
-
 /*Header section*/
 
 header{
@@ -107,7 +106,6 @@ main {
 
 article {
     overflow: hidden;
-    padding-right: 1em;
 }
 
 /*The block that contains the description of the page*/
@@ -204,9 +202,25 @@ aside{
     background-color: #fff;
 }
 
-aside:nth-child(n) {
+aside div div{
     padding: .5em;
+    border: none;
 }
+
+aside div:nth-child(1) div{
+    background-color: #b4b4b4;
+}
+
+aside div:nth-child(2) div{
+    background-color: #d68b00;
+    color: #fff;
+    padding: 0;
+}
+
+aside div:nth-child(3){
+    border: none;
+}
+
 /*Creator profile*/
 aside img {
     border-radius: 50%;
@@ -216,8 +230,6 @@ aside img {
     width: 7em;
     height: 7em;
     object-fit: cover;
-    
-    
 }
 
 aside #who {
@@ -231,38 +243,43 @@ aside #buttonlist {
     color: #d68b00;
 }
 
-aside hr{
-    margin-bottom: 0;
-    padding-bottom: 0;
-    border: 2.25px solid #000;
-    width: 100%;
-    box-shadow:none;
+aside div{
+    border-bottom: #000 2px solid;
 }
 
-aside .dropdrown {
+aside .dropbtn2{
+    border: none;
+    background-color: #d68b00;
+    color: #fff;
+    cursor:pointer;
+    padding: .75em;
+    margin: auto;
     width: 100%;
-    display: inline-block;
-    list-style-type: none;
-    padding: 5px;
-    margin-bottom: 0;
 }
 
-aside .derived{
-    width: 80%;
+.mylist_content2{
     display: none;
+    background-color: #efefef;
+    min-width: 160px;
+    color: #000;
+}
+.mylist_content2 ul li{
     list-style-type: none;
-    padding-left: 1em;
 }
 
-aside .derived li {
-    margin: .75em;
-    margin-left: 0;
+.mylist_content2 ul{
+    padding: .5em;
+    margin: 0;
 }
 
-aside .dropdrown:hover .derived{
+.mylist_content2 a{
+    text-decoration: none;
+    color: #000;
+}
+
+.show2 {
     display: block;
 }
-
 
 /*Footer section*/
 
@@ -356,6 +373,14 @@ footer span:nth-child(4){
     }
         */
 
+        header {
+            float: left;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+        }
+
     header #nav1{
         display: none;
     }
@@ -406,31 +431,6 @@ footer span:nth-child(4){
 
     .show {
         display: block;
-    }
-
-    /*Inner List's elements*/
-    header #nav1 ul li a{
-        text-decoration: none;
-        color: white;
-    }
-    
-    /*List elements*/
-    header #nav1 ul{
-        margin: 0;
-        right: 0;
-        padding: 0;
-    }
-    
-    
-    header #nav1 li {
-        list-style-type: none;
-        list-style-position: inside;
-        padding: 1em;
-        float: right;
-    }
-    
-    header #nav1 ul li:hover{
-        background-color: #3f3f3f;
     }
     
 
