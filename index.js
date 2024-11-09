@@ -55,3 +55,22 @@ window.onclick = function(event) {
       }
     }
   }
+
+  //When user click on Go to button in ASIDE
+function downup2(){
+    document.getElementById("mylist2").classList.toggle("show2");
+}
+
+//When user click again to close the list
+window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn2')) {
+      var dropdowns2 = document.getElementsByClassName("mylist_content2");
+      var i;
+      for (i = 0; i < dropdowns2.length; i++) {
+        var openDropdown2 = dropdowns2[i];
+        if (openDropdown2.classList.contains('show2')) {
+          openDropdown2.classList.remove('show2');
+        }
+      }
+    }
+  }
