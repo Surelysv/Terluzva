@@ -122,62 +122,6 @@ article {
     margin: 0;
 }
 
-/*The block that contains the image and paragraph of linked posts*/
-.linkme{
-    padding-top: .5em;
-    color: #000;
-    display: block;
-}
-
-section span {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: auto;
-    padding: 0;
-    display: block;
-    margin: auto;
-    margin-bottom: 1em;
-    z-index: 2;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-span:hover .heading_a{
-    cursor: pointer;
-    z-index: 2;
-    background-color: #d3c7c7;
-    color: #303030;
-}
-
-/*Heading*/
-section .heading_a {
-    position: relative;
-    background-color: #303030;
-    color: #d3c7c7;
-    padding: 1em;
-    margin: 0;
-}
-
-/*paragraph inside the blocks*/
-.linkme p{
-    overflow: hidden;
-    padding-left: 1em;
-    display: -webkit-box;
-    line-clamp: 3;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    width: 50%;
-    margin-left: 40%;
-}
-
-span .summary{
-    background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,1));
-    color: #ffffff;
-    text-shadow: 1px 2px #000000;
-    padding: 1em;
-}
-
 main img {
     width: 100%;
 }
