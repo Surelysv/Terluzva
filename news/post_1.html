@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title data-i18n="name_site"></title>
+        <meta name="author" content="Yasser Lopez">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="../intro_images/favicon.ico">
+        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <script src="behaviour.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+<!--Header section, here you only need to put the navigation bar-->
+        <header>
+<!--Logotype and name-->
+        <!--Logotype-->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 148 147">
+                    <path id="log"
+                    d="m71.454443,7.2180203 c -8.346788,1.226e-4 -15.113167,6.7665007 -15.11329,15.1132887
+                     1.23e-4,8.346788 6.766502,15.113166 15.11329,15.113289 8.34699,1.62e-4 15.113683,
+                     -6.766299 15.113806,-15.113289 C 86.568126,13.984319 79.801433,7.2178579 71.454443,
+                     7.2180203 Z M 71.424993,54.217218 35.928452,118.38798 c 12.205571,21.16252 23.72637,
+                     42.75382 35.496024,64.17076 L 107.3272,118.38798 Z m 0.140554,145.343062 c -8.346788,
+                     1.2e-4 -15.113166,6.7665 -15.113289,15.11329 1.23e-4,8.34679 6.766501,15.11317 15.113289,
+                     15.11329 8.34699,1.6e-4 15.113683,-6.7663 15.113806,-15.11329 -1.23e-4,-8.34699 -6.766816,
+                     -15.11345 -15.113806,-15.11329 z"/>
+                  </svg>   
+        <!--Name-->
+            <span>
+                <h1 data-i18n="logo_name"></h1>
+            </span>
+         <!--Navigation buttons-->
+            <nav id="nav1">
+                <ul>
+                    <li><a href="info/info.html" data-i18n="title1" class="link"></a></li>
+                    <li><a href="news/news.html" data-i18n="title2" class="link"></a></li>
+                    <li><a href="project/project.html" data-i18n="title3" class="link"></a></li>
+                </ul>
+            </nav>
+        <!--Nav buttons in mobile devices-->
+            <div id="nav2">
+                <button onclick="downup()" class="dropbtn" data-i18n="menu"></button>
+                <nav id="mylist" class="mylist_content">
+                    <ul>
+                        <li><a href="info/info.html" class="link" data-i18n="title1"></a></li>
+                        <li><a href="news/news.html" data-i18n="title2" class="link"></a></li>
+                        <li><a href="project/project.html" data-i18n="title3" class="link"></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+<!--Main section, here you may put all content and presentation-->
+        <main>
+    <!--THE MAIN CONTENT WHERE THE PAGE PRESENT THE MICRONATION AND SHOW SOME LINKS-->
+        <!--IT TALK ABOUT THE LINKS WHERE ONE CAN GO TO ANY POST SHOWED-->
+                <section id="desk">
+                    <h1 data-i18n="post_1_he1"></h1>
+                    <img src="../post_images/post_2.jpg">
+                    <p data-i18n="post_1_text1"></p>
+                    <p data-i18n="post_1_text2"></p>
+                    <p data-i18n="post_1_text3"></p>
+                    <p data-i18n="post_1_text4"></p>
+                </section>
+        <!--Embed links to another pages-->
+                <section class="linkme">
+                     <!--1st link-->
+                     <span style="background-image: url(post_images/post_1.png);">
+                        <h3 class="heading_a" data-i18n="he4"></h3>
+                        <div class="summary">
+                            <p data-i18n="text4"></p>  
+                        </div>
+                    </span>
+                    <!--2nd link-->
+                    <a href="1stnews.html">
+                    <span style="background-image: url(post_images/post_2.jpg);">
+                        <h3 class="heading_a" data-i18n="he5"></h3>
+                        <div class="summary">
+                        <p data-i18n="text5"></p>
+                    </div>
+                    </span>
+                    </a>
+                    <!--3rd link-->
+                    <span style="background-image: url(post_images/post_3.jpg);">
+                        <h3 class="heading_a" data-i18n="he6"></h3>
+                        <div class="summary">
+                        <p data-i18n="text6"></p>  
+                        </div>
+                    </span>
+                </section>
+            </article>
+        </main>
+    <!--Contact me, right?-->
+        <footer>
+            <span id="langs">
+                <p>
+                    <a href="index.html" onclick="changeLanguage('en')"><button onclick="change_lang1()" data-i18n="btn1"></button></a>
+                    <a href="index.html" onclick="changeLanguage('es')"><button onclick="change_lang2()" data-i18n="btn2"></button></a>
+                </p>
+            </span>
+                <span id="information">
+                    <p>
+                        <b data-i18n="cnt"></b>  
+                        <a href="mailto:Yasser1LoZe@gmail.com?subject=Yasser&body=Hi, I have an ask">Send email</a>
+                        <a href="https://www.youtube.com/@Terluzva" class="fa fa-youtube"></a>
+                    </p>
+                         
+                </span>
+
+                <span id="contact">
+                    <p>
+                        <a href="language.html" >New contact</a>
+                    </p>
+                    
+                </span>
+                <span>
+                    <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/" id="cc">
+                        <a property="dct:title" rel="cc:attributionURL" href="https://terluzva.uk">Terluzvan Union</a> 
+                        by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://x.com/Yaniskov">
+                            Yasser Lopez</a> is licensed under 
+                            <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" 
+                            rel="license noopener noreferrer" style="display:inline-block;">
+                            CC BY-NC-SA 4.0
+                            <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" 
+                            src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" 
+                            alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" 
+                            src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt="">
+                            <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" 
+                            src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt="">
+                            <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" 
+                            src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt="">
+                        </a>
+                    </p>
+                </span>
+                
+        </footer>
+    </body>
+</html>
