@@ -1,27 +1,31 @@
+/*General,  to all elements*/
 * {
     font-size: 14px;
     font-family: 'Segoe UI', Arial, sans-serif;  
 }
 
 body {
-    background-color: #efefef;
     text-align: justify;
 }
 
-#img1{
+
+hr {
+    margin: 0;
+}
+
+/*Image welcome*/
+#bg_welcome{
     margin-bottom: 1.5em;
     margin-top: 1.5em;
 }
-/*Header section*/
 
+/*Header section*/
 header{
-    height: 3.2em;
+    height: 4em;
     width: 85%;
     margin: 0 auto;
     position: sticky;
     top: 0;
-    color: #fff;
-    background-color: #5c9d6a;
     z-index: 3;
     overflow: hidden;
 }
@@ -29,17 +33,6 @@ header{
 /*logotype section*/
 
 /*svg logo*/
-
-#log{
-    stroke: #ffffff;
-    fill:none;
-    stroke-width:5.29167;
-    stroke-dasharray:none;
-    stroke-opacity:1;
-    transform: translateY(-2.75em);
-    
-}
-
 svg {
     width: 1.7em;
     height: 100%;
@@ -48,52 +41,44 @@ svg {
 /*Name's micronation*/
 header h1{
     margin: 0;
-    padding: 1em;
+    margin: 1.35em;
 }
-
 header span{
     height: 100%;
     float: left;
 }
 
-/*navigation buttons*/
-/*Navigator container*/
+/*navigation buttons, container*/
+/*Navigator container mobile devices*/
 header #nav2 {
     display: none;
 }
-
+/*Navigator 
+container 
+desktop devices*/
 header #nav1{
     float: right;   
     height: 100%;
     width: auto;
 }
-
-/*Inner List's elements*/
+/*Inner List's elements, links*/
 header #nav1 ul li a{
     text-decoration: none;
-    color: white;
 }
-
-/*List elements*/
+/*List container*/
 header #nav1 ul{
+    height: 100%;
     margin: 0;
     right: 0;
     padding: 0;
 }
-
-
+/*List elements*/
 header #nav1 li {
     list-style-type: none;
     list-style-position: inside;
-    padding: 1em;
+    padding: 1.35em;
     float: right;
 }
-
-header #nav1 ul li:hover{
-    background-color: #3f3f3f;
-}
-
-
 
 /*Main 
 content*/
@@ -101,35 +86,23 @@ main {
     width: 85%;
     margin: auto;
     padding-bottom: 2em;
-    overflow: hidden;
 }
 
+/*Article container of every section. 
+dont need width cause there is an 
+aside and main content settings*/
 article {
     overflow: hidden;
     padding-right: 1em;
 }
 
-/*The block that contains the description of the page*/
-#section_1 {
-    background-color: #b4b4b4;
-    color: #000;
+
+/*section's settings*/
+section {
     padding: 2em;
 }
 
-/*hr*/
-#separator{
-    border: 1px solid;
-    box-shadow: none;
-    margin: 0;
-}
-
 /*The block that contains the image and paragraph of linked posts*/
-.linkme{
-    padding-top: .5em;
-    color: #000;
-    display: block;
-}
-
 section span {
     position: relative;
     overflow: hidden;
@@ -147,15 +120,11 @@ section span {
 span:hover .heading_a{
     cursor: pointer;
     z-index: 2;
-    background-color: #d3c7c7;
-    color: #303030;
 }
 
 /*Heading*/
 section .heading_a {
     position: relative;
-    background-color: #303030;
-    color: #d3c7c7;
     padding: 1em;
     margin: 0;
 }
@@ -173,9 +142,6 @@ section .heading_a {
 }
 
 span .summary{
-    background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,1));
-    color: #ffffff;
-    text-shadow: 1px 2px #000000;
     padding: 1em;
 }
 
@@ -208,13 +174,7 @@ aside div div{
     border: none;
 }
 
-aside div:nth-child(1) div{
-    background-color: #b4b4b4;
-}
-
 aside div:nth-child(2) div{
-    background-color: #d68b00;
-    color: #fff;
     padding: 0;
 }
 
@@ -240,18 +200,10 @@ aside #who {
 /*Old posts*/
 aside #buttonlist {
     cursor: pointer;
-    background-color: #fff;
-    color: #d68b00;
-}
-
-aside div{
-    border-bottom: #000 2px solid;
 }
 
 aside .dropbtn2{
     border: none;
-    background-color: #d68b00;
-    color: #fff;
     cursor:pointer;
     padding: .75em;
     margin: auto;
@@ -260,9 +212,7 @@ aside .dropbtn2{
 
 .mylist_content2{
     display: none;
-    background-color: #efefef;
     min-width: 160px;
-    color: #000;
 }
 .mylist_content2 ul li{
     list-style-type: none;
@@ -275,7 +225,6 @@ aside .dropbtn2{
 
 .mylist_content2 a{
     text-decoration: none;
-    color: #000;
 }
 
 .show2 {
@@ -285,30 +234,31 @@ aside .dropbtn2{
 /*Footer section*/
 
 footer{
-    background-color: #3f3f3f;
     width: 85%;
     margin: auto;
     border-width: 0;
-    height: 11.5em;
+    height: 14em;
     padding: 0;
     margin-bottom: 0;
-    color: #efefef;
 }
 
 /*change language*/
 
-footer #langs{
+footer span:nth-child(1){
     text-align: center;
-    height: auto;
+    height: 6%;
+    padding: .5em;
+}
+
+footer span:nth-child(1) button{
+    border: none;
 }
 
 footer p{
-    padding: 1em;
     margin: 0;
 }
 
 footer a {
-    color: #efefef;
     text-decoration: none;
 }
 
@@ -319,17 +269,17 @@ footer span{
 }
 
 /*Contact details*/
-footer #information{
+/*External links or contact*/
+footer span:nth-child(2){
     width: 50%;
     float: left;
-    height: 40%;
+    height: 62%;
 }
-
-footer #contact{
+/*Information about members*/
+footer span:nth-child(3){
     float: right;
     width: 50%;
-    text-align: right;
-    height: 40%;
+    height: 62%;
 }
 
 /*Creative commons*/
@@ -338,49 +288,26 @@ footer #cc {
     padding: 1em;
 }
 
-footer .fa {
-    padding: 1em;
-    display: block;
-}
-
 footer span:nth-child(4){
     margin: 0;
     float: left;
     height: auto;
 }
 
-/*When it is view at a mobile device*/
+
+/*WHEN THE WEBSITE IS VIEW ON A MOBILE DEVICE*/
 @media only screen and (max-width:700px) {
-    /* #log{
-        display: none;
-        
-    }
-    
-    svg {
-        display: none;
-    }
-    
-    
-    /*Name's micronation*/
     header{
         overflow: visible;
     }
-    /*header h1{
-        display: none;
-    }
-    
-    header span{
-        display: none;
-    }
-        */
 
-        header {
-            float: left;
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 100%;
-        }
+    header {
+        float: left;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+    }
 
     header #nav1{
         display: none;
@@ -393,8 +320,6 @@ footer span:nth-child(4){
     header .dropbtn{
         border-style: double;
         border-right: 0;
-        background-color: #5c9d6a;
-        color: #fff;
         cursor:pointer;
         float: right;
         margin-top: 5em;
@@ -403,17 +328,12 @@ footer span:nth-child(4){
         padding: .75em;
         border-radius: 0;
     }
-    header .dropbtn:hover, .dropbtn:focus{
-        background-color: #3f3f3f;
-        color: #fff;
-    }
+    
     .mylist_content{
         display: none;
         position: fixed;
         z-index: 4;
-        background-color: #efefef;
         min-width: 160px;
-        color: #000;
         right: 0;
         margin-top: 5em;
     }
@@ -427,7 +347,6 @@ footer span:nth-child(4){
 
     .mylist_content a{
         text-decoration: none;
-        color: #000;
     }
 
     .show {
@@ -449,14 +368,12 @@ footer span:nth-child(4){
         float: left;
         left: 0;
         position: absolute;
-        background-color: #3f3f3f;
         width: 100%;
         margin: auto;
         border-width: 0;
         height: 15.5em;
         padding: 0;
         margin-bottom: 0;
-        color: #efefef;
     }
 
 /*change language*/
@@ -472,7 +389,6 @@ footer p{
 }
 
 footer a {
-    color: #efefef;
     text-decoration: none;
 }
 

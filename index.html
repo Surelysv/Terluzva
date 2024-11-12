@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/x-icon" href="intro_images/favicon.ico">
         <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="style.css">
         <meta charset="UTF-8">
         <script src="index.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -53,7 +54,7 @@
 <!--Main section, here you may put all content and presentation-->
         <main>
 <!--the image presentation-->
-            <img src="intro_images/scene1.png" alt="the future project of TERLUZVA" id="img1">
+            <img src="intro_images/scene1.png" alt="the future project of TERLUZVA" id="bg_welcome">
             <aside>
                 <div>
                     <div>
@@ -87,7 +88,7 @@
                     <p data-i18n="text1"></p>
                 </section>
         <!--IT TALK ABOUT THE LINKS WHERE ONE CAN GO TO ANY POST SHOWED-->
-        <hr id="separator">
+        <hr>
                 <section id="desk">
                     <h1 data-i18n="he1"></h1>
                     <h2 data-i18n="he2"></h2>
@@ -125,26 +126,30 @@
         </main>
     <!--Contact me, right?-->
         <footer>
-            <span id="langs">
-                <p>
+            <span>
                     <a href="index.html" onclick="changeLanguage('en')"><button onclick="change_lang1()" data-i18n="btn1"></button></a>
                     <a href="index.html" onclick="changeLanguage('es')"><button onclick="change_lang2()" data-i18n="btn2"></button></a>
-                </p>
             </span>
-                <span id="information">
-                    <p>
-                        <b data-i18n="cnt"></b>  
-                        <a href="mailto:Yasser1LoZe@gmail.com?subject=Yasser&body=Hi, I have an ask">Send email</a>
-                        <a href="https://www.youtube.com/@Terluzva" class="fa fa-youtube"></a>
-                    </p>
-                         
+                <span>
+                    <ul>
+                        <li><p data-i18n="cnt1"></p></li>
+                        <ul>
+                            <li><a href="mailto:Yasser1LoZe@gmail.com?subject=Yasser&body=Hi, I have an ask" data-i18n="cnt1_link1"></a></li>
+                            <li><a href="https://www.youtube.com/@Terluzva" data-i18n="cnt1_link2"></a></li>
+                        </ul>
+                    </ul>                    
                 </span>
 
-                <span id="contact">
-                    <p>
-                        <a href="language.html" >New contact</a>
-                    </p>
-                    
+                <span>
+                    <ul>
+                        <li><p data-i18n="cnt2"></p></li>
+                        <ul>
+                            <li><a href="#" data-i18n="cnt2_link1"></a></li>
+                            <li><a href="#" data-i18n="cnt2_link2"></a></li>
+                            <li><a href="#" data-i18n="cnt2_link3"></a></li>
+                            <li><a href="#" data-i18n="cnt2_link4"></a></li>
+                        </ul>
+                    </ul>
                 </span>
                 <span>
                     <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/" id="cc">
@@ -165,7 +170,6 @@
                         </a>
                     </p>
                 </span>
-                
         </footer>
     </body>
 </html>
