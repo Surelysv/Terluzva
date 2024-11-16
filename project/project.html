@@ -5,15 +5,16 @@
         <meta name="author" content="Yasser Lopez">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/x-icon" href="intro_images/favicon.ico">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="assets/index.css">
+        <link rel="stylesheet" href="assets/style.css">
         <meta charset="UTF-8">
-        <script src="behaviour.js"></script>
+        <script src="assets/index.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-    <!--Header section, here you only need to put the navigation bar-->
+<!--Header section, here you only need to put the navigation bar-->
         <header>
-    <!--Logotype and name-->
+<!--Logotype and name-->
         <!--Logotype-->
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 148 147">
                     <path id="log"
@@ -30,97 +31,125 @@
             <span>
                 <h1 data-i18n="logo_name"></h1>
             </span>
-    <!--Navigation buttons-->
+         <!--Navigation buttons-->
             <nav id="nav1">
                 <ul>
-                    <li><a href="../index.html" class="link" data-i18n="title1"></a></li>
-                    <li><a href="../news/news.html" data-i18n="title2" class="link"></a></li>
-                    <li><a href="../info/info.html" data-i18n="title3" class="link"></a></li>
+                    <li><a href="info/info.html" data-i18n="title1" class="link"></a></li>
+                    <li><a href="news/news.html" data-i18n="title2" class="link"></a></li>
+                    <li><a href="project/project.html" data-i18n="title3" class="link"></a></li>
                 </ul>
             </nav>
-    <!--Nav buttons in mobile devices-->
+        <!--Nav buttons in mobile devices-->
             <div id="nav2">
-                <button onclick="downup()" class="dropbtn">Go to</button>
+                <button onclick="downup()" class="dropbtn" data-i18n="menu"></button>
                 <nav id="mylist" class="mylist_content">
                     <ul>
                         <li><a href="info/info.html" class="link" data-i18n="title1"></a></li>
-                        <li><a href="../news/news.html" data-i18n="title2" class="link"></a></li>
-                        <li><a href="../info/info.html" data-i18n="title3" class="link"></a></li>
+                        <li><a href="news/news.html" data-i18n="title2" class="link"></a></li>
+                        <li><a href="project/project.html" data-i18n="title3" class="link"></a></li>
                     </ul>
                 </nav>
             </div>
-            
         </header>
 <!--Main section, here you may put all content and presentation-->
         <main>
 <!--the image presentation-->
-            <img src="../intro_images/scene2.png" alt="the future project of TERLUZVA" id="img1">
-            
+            <img src="intro_images/scene1.png" alt="the future project of TERLUZVA" id="bg_welcome">
+            <aside>
+                <div>
+                    <div>
+                        <h2 data-i18n="author"></h2>
+                        <h3 data-i18n="author_name"></h3>
+                        <img src="intro_images/author.jpg" alt="The micronation founder">
+                        <p id="who" data-i18n="author3"></p>
+                </div>
+                </div>
+                <div>
+                    <div>
+                        <button onclick="downup2()" class="dropbtn2" data-i18n="old_p"></button>
+                    <nav id="mylist2" class="mylist_content2">
+                            <ul>
+                                <a><li data-i18n="old_p1"></li></a>
+                            </ul>
+                    </nav>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <p data-i18n="more"></p>
+                        <blockquote data-i18n="quote"></blockquote>
+                    </div>
+                </div>
+                </aside>
     <!--THE MAIN CONTENT WHERE THE PAGE PRESENT THE MICRONATION AND SHOW SOME LINKS-->
             <article> 
                 <section id="section_1">
-                    <h1 data-i18n="intro"></h1>
-                    <p>
-                        Here you see the current project in develop, a poject associated to the
-                        micronation's goals, every project may be possibly complete in 6 months
-                        and there will be a poll for the citizens to debate the new project.<br>
-                        If you want to aid the current project, you must conctact <strong>via email</strong> 
-                        or <strong>via discord</strong> of the main leader to receive the permission and/or debate 
-                        a change.
-                    </p>
+                    <h1 data-i18n="welcome"></h1>
+                    <p data-i18n="text1"></p>
                 </section>
-                <hr id="separator">
-<!--IT TALK ABOUT THE LINKS WHERE ONE CAN GO TO ANY POST SHOWED-->
+        <!--IT TALK ABOUT THE LINKS WHERE ONE CAN GO TO ANY POST SHOWED-->
+        <hr>
                 <section id="desk">
-                    <h1>The official language of the Terluzvan Union</h1>
-                    <h2>What is the Terluzvan language?</h2>
-                    <p>
-                        The official language of the Terluzvan Union exactly is a <strong>constructed language</strong>
-                        (abreviatted as "conlang"), which is an artificial language created for a specific goal,
-                        The goal may be artistic, auxiliar (be an aid to learn more languages), scientific (prove
-                        a linguistic theory) or philosophical. In this case, the Terluzvan language (or padut
-                        kanguage) is a
-                        philosophical language with artistic tendences.
-                    </p>
-                    <h2>Where will be updated the project?</h2>
-                    <p>
-                        The project is updated on a .docx file uploaded at mediafire download host, but here is 
-                        the developed parts:
-                        <ol>
-                            <li>Goals</li>
-                            <li>Phonetic</li>
-                            <li>Morphology</li>
-                        </ol>
-                        <a href="https://www.mediafire.com/file/ayimr3qzgc75jir/Padot_conlang.docx/file" id="link_project">
-                            Padot language
-                        </a>
-                    </p>
+                    <h1 data-i18n="he1"></h1>
+                    <h2 data-i18n="he2"></h2>
+                    <p data-i18n="text2"></p>
+                    <h2 data-i18n="he3"></h2>
+                    <p data-i18n="text3"></p>
+                </section>
+        <!--Embed links to another pages-->
+                <section class="linkme">
+                     <!--1st link-->
+                     <span style="background-image: url(post_images/post_1.png);">
+                        <h3 class="heading_a" data-i18n="he4"></h3>
+                        <div class="summary">
+                            <p data-i18n="text4"></p>  
+                        </div>
+                    </span>
+                    <!--2nd link-->
+                    <a href="1stnews.html">
+                    <span style="background-image: url(post_images/post_2.jpg);">
+                        <h3 class="heading_a" data-i18n="he5"></h3>
+                        <div class="summary">
+                        <p data-i18n="text5"></p>
+                    </div>
+                    </span>
+                    </a>
+                    <!--3rd link-->
+                    <span style="background-image: url(post_images/post_3.jpg);">
+                        <h3 class="heading_a" data-i18n="he6"></h3>
+                        <div class="summary">
+                        <p data-i18n="text6"></p>  
+                        </div>
+                    </span>
                 </section>
             </article>
         </main>
     <!--Contact me, right?-->
         <footer>
-            <span id="langs">
-                <p>
-                    <a href="index.html" onclick="changeLanguage('en')">English</a>
-                <a href="index.html" onclick="changeLanguage('es')">Spanish</a>
-                </p>
-                
+            <span>
+                    <a href="index.html" onclick="changeLanguage('en')"><button onclick="change_lang1()" data-i18n="btn1"></button></a>
+                    <a href="index.html" onclick="changeLanguage('es')"><button onclick="change_lang2()" data-i18n="btn2"></button></a>
             </span>
-                <span id="information">
-                    <p>
-                        <b>Contact:</b>  
-                        <a href="mailto:Yasser1LoZe@gmail.com?subject=Yasser&body=Hi, I have an ask">Send email</a>
-                        <a href="https://www.youtube.com/@Terluzva" class="fa fa-youtube"></a>
-                    </p>
-                         
+                <span>
+                    <ul>
+                        <li><p data-i18n="cnt1"></p></li>
+                        <ul>
+                            <li><a href="mailto:Yasser1LoZe@gmail.com?subject=Yasser&body=Hi, I have an ask" data-i18n="cnt1_link1"></a></li>
+                            <li><a href="https://www.youtube.com/@Terluzva" data-i18n="cnt1_link2"></a></li>
+                        </ul>
+                    </ul>                    
                 </span>
 
-                <span id="contact">
-                    <p>
-                        <a href="language.html" >New contact</a>
-                    </p>
-                    
+                <span>
+                    <ul>
+                        <li><p data-i18n="cnt2"></p></li>
+                        <ul>
+                            <li><a href="#" data-i18n="cnt2_link1"></a></li>
+                            <li><a href="#" data-i18n="cnt2_link2"></a></li>
+                            <li><a href="#" data-i18n="cnt2_link3"></a></li>
+                            <li><a href="#" data-i18n="cnt2_link4"></a></li>
+                        </ul>
+                    </ul>
                 </span>
                 <span>
                     <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/" id="cc">
@@ -141,7 +170,6 @@
                         </a>
                     </p>
                 </span>
-                
         </footer>
     </body>
 </html>
